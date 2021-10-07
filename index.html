@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário WEB</h1>
+    </header>
+    <section>
+        <form onsubmit="cadastrar()">
+                <input type="text" placeholder="Digite o nome" id="nome" required>
+                <input type="number" placeholder="Digite o RA" id="ra" required>
+                <select name="" id="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select> 
+                <input type="number" placeholder="Digite a idade" id="idade" required>
+                <input type="text" placeholder="Digite o endereço" id="endereco" required>
+                <input type="tel" placeholder="Digite o telefone" id="telefone" required>
+                <input type="email" placeholder="Digite o e-mail" id="email" required>
+                <input type="submit" value="Cadastrar" class="button">
+                <input type="button" onclick="listarCadastrados()" value="Cadastrados">
+        </form>
+        <div class="table">
+            <table id="tabela" class="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>RA</th>
+                        <th>Sexo</th>
+                        <th>Idade</th>
+                        <th>Endereco</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo">
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
